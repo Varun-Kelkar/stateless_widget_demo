@@ -42,14 +42,12 @@ class ItemCounterState extends State<ItemCounter> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         setState(() {
           count++;
         });
       },
-      child:Text('${widget.name}:$count') ,
+      child: Text('${widget.name}:$count'),
     );
-    
-     
   }
 }
